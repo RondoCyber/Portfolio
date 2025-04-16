@@ -44,7 +44,7 @@ about_content: | # this will include new lines to allow paragraphs
     - Lists
     - Tables
     - <a href="google.com">Links</a>
-    - Images ![alt text](/images/landscape-trees.jpg "Trees")
+    - Images:/images/landscape-trees.jpg
 
 content:
   - title: Projects # Title for the section
@@ -55,9 +55,7 @@ content:
                       # other value (or no value) means no border will be displayed
         title: "Blue Team Lab: Detecting RDP Brute Force with Winlogbeat and ELK"
         quote: >
-          Objective:
-This lab simulated an RDP brute-force attack within a controlled internal network to demonstrate how Windows logs can be forwarded and analyzed using the ELK Stack (Elasticsearch, Logstash, Kibana). The goal was to detect the malicious activity through event code logging and analysis in Kibana.
-
+          
         description: | # this will include new lines to allow paragraphs
         
 
