@@ -21,14 +21,53 @@ about_content: |
   Currently certified with CompTIA Security+ and Google Cybersecurity Certificate, I'm eager to join a team where I can contribute, learn, and grow in the field of cybersecurity.
 
 content:
-  - title: Projects
+    - title: Projects
     layout: list
     content:
       - layout: left
         border: weak
         title: "Blue Team Lab: Detecting RDP Brute Force with Winlogbeat and ELK"
         description: |
-          Set up a Windows Server honeypot to simulate brute-force login attempts via RDP. Collected and visualized logs using Winlogbeat and the ELK stack. Used Kibana to create dashboards for detecting suspicious login behavior.
+          **Lab Setup:**  
+          Kali Linux (Attacker) – 192.168.20.11  
+          Windows 11 Pro (Target) – 192.168.20.10  
+          Ubuntu ELK Stack (SIEM) – 192.168.20.12  
+
+          All machines were connected to a virtual internal network. Winlogbeat was installed on the Windows machine to forward logs to Elasticsearch, where they were visualized in Kibana.
+
+          **Tools Used:**  
+          - Hydra – to simulate the brute-force RDP attack from Kali  
+          - Winlogbeat – to ship Windows logs to ELK  
+          - Kibana – for log visualization and event correlation  
+          - Elasticsearch + Logstash – for log storage and parsing  
+
+          **Attack Simulation:**  
+          Using Kali, a brute-force RDP attack was launched against the Windows 11 machine using Hydra:  
+          ```
+          hydra -t 4 -V -f -l Administrator -P /usr/share/wordlists/rockyou.txt rdp://192.168.20.10
+          ```
+          This simulated an attacker attempting multiple login combinations via RDP.
+
+          ![Attack Simulation](images/attack-sim.png)  # Replace this with actual image filename
+
+          **Detection in ELK:**  
+          On the ELK stack (Kibana), Event ID 4625 (failed login attempt) was searched using the Discover tab:  
+          ```
+          event.code: 4625
+          ```
+          These logs confirmed the brute-force activity, showing multiple failed login attempts from the Kali IP.
+
+          ![Kibana Discover](images/kibana-discover.png)  # Replace with actual image
+
+          **Outcome:**  
+          The brute-force attack was successfully detected and logged using Winlogbeat and visualized in Kibana. This demonstrates a basic but critical use case for log correlation, alerting, and threat detection in a Blue Team environment.
+
+          **Skills Demonstrated:**  
+          - Event log forwarding (Winlogbeat → ELK)  
+          - ELK Stack deployment and configuration  
+          - Brute-force attack simulation (Hydra)  
+          - SIEM-based detection using Kibana  
+          - Windows event code analysis (Event ID 4625)
 
   - title: Certifications
     layout: list
