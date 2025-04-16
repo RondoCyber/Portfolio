@@ -21,7 +21,7 @@ about_content: |
   Currently certified with CompTIA Security+ and Google Cybersecurity Certificate, I'm eager to join a team where I can contribute, learn, and grow in the field of cybersecurity.
 
 content:
-    - title: Projects
+  - title: Projects
     layout: list
     content:
       - layout: left
@@ -48,41 +48,11 @@ content:
           ```
           This simulated an attacker attempting multiple login combinations via RDP.
 
-          ![Attack Simulation](images/attack-sim.png)  # Replace this with actual image filename
+          ![Attack Simulation](images/attack-sim.png)
 
           **Detection in ELK:**  
-          On the ELK stack (Kibana), Event ID 4625 (failed login attempt) was searched using the Discover tab:  
-          ```
-          event.code: 4625
-          ```
-          These logs confirmed the brute-force activity, showing multiple failed login attempts from the Kali IP.
+          On the ELK stack (Kibana), Event ID 4625 (failed login attempt) was searched using
 
-          ![Kibana Discover](images/kibana-discover.png)  # Replace with actual image
-
-          **Outcome:**  
-          The brute-force attack was successfully detected and logged using Winlogbeat and visualized in Kibana. This demonstrates a basic but critical use case for log correlation, alerting, and threat detection in a Blue Team environment.
-
-          **Skills Demonstrated:**  
-          - Event log forwarding (Winlogbeat → ELK)  
-          - ELK Stack deployment and configuration  
-          - Brute-force attack simulation (Hydra)  
-          - SIEM-based detection using Kibana  
-          - Windows event code analysis (Event ID 4625)
-
-  - title: Certifications
-    layout: list
-    content:
-      - layout: top-right
-        title: "CompTIA Security+"
-        sub_title: "March 2025"
-      - layout: top-right
-        title: "Google Cybersecurity Certificate"
-        sub_title: "January 2025"
-
-  - title: Skills
-    layout: text
-    content: |
-      **Tools & Technologies**: ELK Stack, Wireshark, Suricata, Zeek, Kali Linux, Ubuntu, Windows Server, GitHub
 
       **Concepts**: Threat detection, log analysis, network security, incident response, blue team methodology
 
