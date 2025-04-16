@@ -1,6 +1,5 @@
 # Site
-repository: Git repository where your resume will be hosted, only required if you are hosting on GitHub (eg. sproogen/modern-resume-theme)
-# favicon: Directory of your favicon (eg. images/favicon.ico)(optional)
+repository: RondoCyber/Portfolio
 
 # Content configuration version
 version: 2
@@ -8,110 +7,69 @@ version: 2
 # Personal info
 name: Abdul Majeed
 title: Aspiring SOC Analyst
-email: abdulio.moiz@gmail.com | Ontario, Canada
-
-# email_title: Email (Email title override)
-# phone_title: Phone (Phone title override)
-# website_title: Web (Website title override)
+email: abdulio.moiz@gmail.com
+location: Ontario, Canada
 
 # Dark Mode (true/false/never)
 darkmode: true
 
-# Social links
-
-# Additional icon links
-additional_links:
-- title: Link name
-  icon: Font Awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&s=brands&m=free)
-  url: Link url (eg. https://google.com)
-# - title: another link
-#   icon: font awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&s=brands&m=free)
-#   url: Link url (eg. https://google.com)
-
-# Google Analytics and Tag Manager
-# Using more than one of these may cause issues with reporting
-# gtm: "GTM-0000000"
-# gtag: "UA-00000000-0"
-# google_analytics: "UA-00000000-0"
-
 # About Section
-# about_title: About Me (Use this to override about section title)
 about_profile_image: images/IMG_4807-modified.png
-about_content: | # this will include new lines to allow paragraphs
-  Write an awesome description about yourself here, this supports markdown, so you can add [links](http://foobar.com) and highlight things <mark>like this</mark>.
+about_content: |
+  I'm an aspiring SOC Analyst with a strong passion for cybersecurity, threat detection, and blue team operations. I'm actively building labs, studying attack techniques, and gaining hands-on experience with tools like ELK, Wireshark, and Splunk. 
 
-  You can even add paragraphs by using empty lines like this and add anything else [markdown](https://www.markdownguide.org/getting-started#what-is-markdown) supports such as
-    - Lists
-    - Tables
-    - <a href="google.com">Links</a>
-    - Images:/images/landscape-trees.jpg
+  Currently certified with CompTIA Security+ and Google Cybersecurity Certificate, I'm eager to join a team where I can contribute, learn, and grow in the field of cybersecurity.
 
 content:
-  - title: Projects # Title for the section
-    layout: list # Type of content section (list/text)
+  - title: Projects
+    layout: list
     content:
       - layout: left
-        border: weak  # Value of `weak` will display a weak border below this item. # Any 
-                      # other value (or no value) means no border will be displayed
+        border: weak
         title: "Blue Team Lab: Detecting RDP Brute Force with Winlogbeat and ELK"
-        quote: >
-          
-        description: | # this will include new lines to allow paragraphs
-        
+        description: |
+          Set up a Windows Server honeypot to simulate brute-force login attempts via RDP. Collected and visualized logs using Winlogbeat and the ELK stack. Used Kibana to create dashboards for detecting suspicious login behavior.
 
-
-  - title: Experience
+  - title: Certifications
     layout: list
     content:
-      - layout: right
-        title: Company name
-        sub_title: Job title
-        caption: Date Range (eg. November 2016 - present)
-        link: Link to company (optional)
-        quote: >
-          Short description of the company (optional)
-        description: | # this will include new lines to allow paragraphs
-          Description of role
-  - title: Education
-    layout: list
-    content:
-  - layout: top-right
-    title: "Comptia Security+"
-    sub_title: "March 2025"
-  - layout: top-right
-    title: "Google Cybersecurity Certificate"
-    sub_title: "January 2025"
+      - layout: top-right
+        title: "CompTIA Security+"
+        sub_title: "March 2025"
+      - layout: top-right
+        title: "Google Cybersecurity Certificate"
+        sub_title: "January 2025"
+
   - title: Skills
     layout: text
-    content: | # this will include new lines to allow paragraphs
-      This is where you can write a little more about yourself. You could title this section **Interests** and include some of your other interests.
+    content: |
+      **Tools & Technologies**: ELK Stack, Wireshark, Suricata, Zeek, Kali Linux, Ubuntu, Windows Server, GitHub
 
-      Or you could title it **Skills** and write a bit more about things that make you more desirable, like *leadership* or *teamwork*
+      **Concepts**: Threat detection, log analysis, network security, incident response, blue team methodology
+
+      **Soft Skills**: Self-driven, continuous learner, strong attention to detail
 
 # Footer
 footer_show_references: true
-# references_title: References on request (Override references text)
 
-# Build settings
-# theme: modern-resume-theme (Use this is you are hosting your resume yourself)
-# remote_theme: sproogen/modern-resume-theme (Use this if you are hosting your resume on GitHub)
+# Theme setup
+remote_theme: sproogen/modern-resume-theme
 
 sass:
   sass_dir: _sass
   style: compressed
 
 plugins:
- - jekyll-seo-tag
+  - jekyll-seo-tag
 
-exclude : [
-  "Gemfile",
-  "Gemfile.lock",
-  "node_modules",
-  "vendor/bundle/",
-  "vendor/cache/",
-  "vendor/gems/",
-  "vendor/ruby/",
-  "lib/",
-  "scripts/",
-  "docker-compose.yml",
-  ]
+exclude:
+  - "Gemfile"
+  - "Gemfile.lock"
+  - "node_modules"
+  - "vendor/bundle/"
+  - "vendor/cache/"
+  - "vendor/gems/"
+  - "vendor/ruby/"
+  - "lib/"
+  - "scripts/"
+  - "docker-compose.yml"
