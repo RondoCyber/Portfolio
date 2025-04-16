@@ -73,11 +73,14 @@ content:
   - title: Education
     layout: list
     content:
-      - layout: top-right
-        title: Comptia Security+
-        sub_title: March 2025
-        title: Google Cybersecurity Certificate
-        sub_title: January 2025
+  - layout: top-right
+    title: "Comptia Security+"
+    sub_title: "March 2025"
+  - layout: top-right
+    title: "Google Cybersecurity Certificate"
+    sub_title: "January 2025"
+  - title: Skills
+    layout: text
   - title: Skills
     layout: text
     content: | # this will include new lines to allow paragraphs
