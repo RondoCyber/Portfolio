@@ -42,7 +42,7 @@ content:
           Kali Linux (Attacker) – 192.168.20.11  
           Windows 11 Pro (Target) – 192.168.20.10  
           Ubuntu ELK Stack (SIEM) – 192.168.20.12  
-          !(images/pepo.png) 
+          ![Pepo Image](images/pepo.png)
 
           All machines were connected to a virtual internal network. Winlogbeat was installed on the Windows machine to forward logs to Elasticsearch, where they were visualized in Kibana.
 
@@ -75,8 +75,6 @@ content:
           - Windows event code analysis (Event ID 4625)
 
           ![Detection in ELK](images/detection.png)
-
-        
 
   - title: Skills
     layout: text
