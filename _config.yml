@@ -42,7 +42,7 @@ content:
           Kali Linux (Attacker) – 192.168.20.11  
           Windows 11 Pro (Target) – 192.168.20.10  
           Ubuntu ELK Stack (SIEM) – 192.168.20.12  
-          ![Kibana Visualization](images/pepo1.png)  # Image 3
+          (images/pepo.png) 
 
           All machines were connected to a virtual internal network. Winlogbeat was installed on the Windows machine to forward logs to Elasticsearch, where they were visualized in Kibana.
 
@@ -58,7 +58,7 @@ content:
 
           This simulated an attacker attempting multiple login combinations via RDP.
 
-          ![Attack Simulation](images/attack.png)  # Image 1
+          ![Attack Simulation](images/attack.png) 
 
           **Detection in ELK:**  
           On the ELK stack (Kibana), Event ID 4625 (failed login attempt) was searched using `event.code: 4625`.  
@@ -74,7 +74,7 @@ content:
           - SIEM-based detection using Kibana  
           - Windows event code analysis (Event ID 4625)
 
-          ![Detection in ELK](images/detection.png)  # Image 2
+          ![Detection in ELK](images/detection.png)
 
         
 
