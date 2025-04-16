@@ -35,7 +35,7 @@ content:
 
           All machines were connected to a virtual internal network. Winlogbeat was installed on the Windows machine to forward logs to Elasticsearch, where they were visualized in Kibana.
 
-          **Tools Used:**  
+          Tools Used:  
           - Hydra – to simulate the brute-force RDP attack from Kali  
           - Winlogbeat – to ship Windows logs to ELK  
           - Kibana – for log visualization and event correlation  
@@ -49,13 +49,13 @@ content:
 
           ![Attack Simulation](images/attack-sim.png)
 
-          **Detection in ELK:**  
+          Detection in ELK:  
           On the ELK stack (Kibana), Event ID 4625 (failed login attempt) was searched using
 
 
-      **Concepts**: Threat detection, log analysis, network security, incident response, blue team methodology
+      Concepts: Threat detection, log analysis, network security, incident response, blue team methodology
 
-      **Soft Skills**: Self-driven, continuous learner, strong attention to detail
+      Soft Skills: Self-driven, continuous learner, strong attention to detail
 
 # Footer
 footer_show_references: true
