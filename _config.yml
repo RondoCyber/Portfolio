@@ -43,9 +43,8 @@ content:
 
           **Attack Simulation:**  
           Using Kali, a brute-force RDP attack was launched against the Windows 11 machine using Hydra:  
-          ```
-          hydra -t 4 -V -f -l Administrator -P /usr/share/wordlists/rockyou.txt rdp://192.168.20.10
-          ```
+           `hydra -t 4 -V -f -l Administrator -P /usr/share/wordlists/rockyou.txt rdp://192.168.20.10`
+
           This simulated an attacker attempting multiple login combinations via RDP.
 
           ![Attack Simulation](images/attack-sim.png)
