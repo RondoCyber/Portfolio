@@ -82,7 +82,7 @@ content:
   - title: Education
     layout: list
     content:
-        layout: top-right
+      - layout: top-right
         title: Comptia Security+
         sub_title: March 2025
         title: Google Cybersecurity Certificate
