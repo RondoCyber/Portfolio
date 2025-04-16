@@ -28,12 +28,13 @@ content:
         title: "CompTIA Security+"
         sub_title: "March 2025"
         content: |
-          <img src="images/comptia.png" width="100" alt="CompTIA Security+" />
+          <img src="/images/comptia.png" width="100" alt="CompTIA Security+" />
       - layout: left
         title: "Google Cybersecurity Certificate"
         sub_title: "January 2025"
         content: |
-          <img src="images/google.png" width="100" alt="Google Cybersecurity Certificate" />
+          <img src="/images/google.png" width="100" alt="Google Cybersecurity Certificate" />
+
 
 
   - title: Projects
