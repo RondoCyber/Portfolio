@@ -16,7 +16,7 @@ location: Ontario, Canada
 # website_title: Web (Website title override)
 
 # Dark Mode (true/false/never)
-darkmode: false
+darkmode: true
 
 # Social links
 
@@ -83,7 +83,7 @@ content:
   - title: Education
     layout: list
     content:
-      - layout: top-right
+        layout: top-right
         title: Comptia Security+
         sub_title: March 2025
         title: Google Cybersecurity Certificate
